@@ -1,0 +1,17 @@
+button {
+  border: 2px solid rgb(44, 75, 176);
+  border-radius: 5px;
+  height: 2.5rem;
+  background-color: rgb(44, 75, 176);
+  color: white;
+  /* box-shadow: inset 0px 0px 5px 0px white; */
+  box-sizing: border-box;
+}
+button:hover {
+  outline: 2px solid white;
+  box-shadow: none;
+}
+
+button:active {
+  box-shadow: inset 0px 0px 5px 0px black;
+}

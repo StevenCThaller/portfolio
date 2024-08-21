@@ -1,0 +1,34 @@
+.error-dialog {
+  background-color: lightblue;
+  height: 1.5em;
+  position: relative;
+  margin-left: 15px;
+  align-items: center;
+  display: flex;
+  padding-right: 5px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.error-dialog::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-top: 0.75em solid transparent;
+  border-right: 0.75em solid lightblue;
+  border-bottom: 0.75em solid transparent;
+}
+
+.error-text {
+  color: red;
+  padding-left: 10px;
+}
+
+.error-dialog > .close-button {
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-left: 10px;
+  padding-bottom: 2px;
+}

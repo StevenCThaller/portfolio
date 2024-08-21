@@ -1,0 +1,48 @@
+header {
+  margin-bottom: 1em;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+}
+
+header > .container {
+  flex-direction: row;
+  align-items: last baseline;
+  gap: 3em;
+}
+
+.ody-odes {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: last baseline;
+}
+
+.top-nav {
+  display: flex;
+  gap: 2em;
+}
+
+@media only screen and (max-width: 576px) {
+  header > .container {
+    flex-direction: column;
+  }
+
+  .top-nav {
+    justify-content: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,17 @@
+input,
+textarea {
+  border: 2px solid white;
+  border-radius: 5px;
+  min-height: 2.5em;
+  padding: 0 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  background: none;
+  font-size: 1.2em;
+}
+
+textarea {
+  resize: none;
+}

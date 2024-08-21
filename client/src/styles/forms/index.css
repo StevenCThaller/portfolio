@@ -1,0 +1,17 @@
+@import url("./inputs.css");
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5em;
+  position: relative;
+}
+
+.form-group.stacked {
+  flex-direction: column;
+}
+
+.form-group > * {
+  flex: 1;
+}
