@@ -1,17 +1,21 @@
 import SocialIcon from "./SocialIcon";
+import githubLogo from "../assets/github.jpg";
+import linkedinLogo from "../assets/linkedin.jpg";
 
 function Socials() {
   return (
-    <div id="socials" className="container">
+    <div id="socials">
       <SocialIcon
         url="https://linkedin.com/in/steven-thaller"
-        src="/linkedin.jpg"
+        src={linkedinLogo}
         alt="LinkedIn Logo"
+        text="Linkedin"
       />
       <SocialIcon
         url="https://github.com/stevencthaller"
-        src="/github.jpg"
+        src={githubLogo}
         alt="Github Logo"
+        text="GitHub"
       />
     </div>
   );

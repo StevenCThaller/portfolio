@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo65.jpg";
 
 function Header() {
   return (
     <header>
       <div className="container">
         <Link to="/" className="brand col-sm-12">
-          <img src="/logo65.jpg" alt="Cody Codes logo" />
+          <img src={logo} alt="Cody Codes logo" />
           <div className="ody-odes">
             <span>ody</span>
             <span>odes</span>

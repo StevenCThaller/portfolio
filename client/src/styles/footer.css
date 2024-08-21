@@ -1,0 +1,10 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  padding: 1em;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,55 @@
+#socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: fixed;
+  left: 1em;
+  bottom: 4em;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#socials .social-icon {
+  width: 66px;
+  height: 66px;
+}
+
+#socials a {
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+  text-decoration: none;
+}
+
+#socials a:nth-child(1) {
+  animation-delay: 0s;
+}
+#socials a:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.social-text {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 576px) {
+  .social-icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  #socials {
+    flex-direction: row;
+  }
+
+  #socials a {
+    animation: none;
+  }
+}

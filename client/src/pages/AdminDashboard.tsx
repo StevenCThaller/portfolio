@@ -18,7 +18,7 @@ function AdminDashboard() {
       navigate("/");
     }
   };
-  return <div>AdminDashboard</div>;
+  return <main>AdminDashboard</main>;
 }
 
 export default AdminDashboard;

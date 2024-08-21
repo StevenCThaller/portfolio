@@ -47,9 +47,9 @@ function ContactPage() {
     setErrors({ ...errors, [key]: "" });
 
   return (
-    <div id="contact" className="container gap">
+    <main id="contact" className="container gap">
       <section className="container gap m-h-center col-8 col-sm-12">
-        <h1>Contact Cody</h1>
+        <h2>Contact Cody</h2>
         <p>
           Want to contract some work to Cody? Think Cody is a great fit for an
           open role? Do you just want to congratulate him for his awesome work?
@@ -123,7 +123,7 @@ function ContactPage() {
           </button>
         </div>
       </form>
-    </div>
+    </main>
   );
 }
 

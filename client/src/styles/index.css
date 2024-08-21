@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 @import url("./grid/index.css");
 @import url("./forms/index.css");
 @import url("./buttons/index.css");
 @import url("./flex.css");
 @import url("./header.css");
+@import url("./socials.css");
+@import url("./footer.css");
+@import url("./animations.css");
 
 body {
   background-color: rgb(56, 56, 59);
+  overflow-x: hidden;
 }
 
 * {
@@ -31,12 +36,63 @@ a {
   color: white;
 }
 
+h1 {
+  font-size: 6em;
+  display: flex;
+  flex-direction: column;
+}
+
+#info {
+  text-align: right;
+  animation: fadeIn 2s, slideLeft 1s;
+}
+
 .error-text {
   color: red;
 }
 
+#steven {
+  font-size: 0.33em;
+}
+
+#landing {
+  justify-content: center;
+  gap: 10em;
+  align-items: last baseline;
+  display: flex;
+  position: relative;
+  min-height: 400px;
+}
+
+.text-divider {
+  font-size: 1.5em;
+  color: #0077ed;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 762px) {
+  #landing {
+    justify-content: space-between;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   p {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  #landing {
+    min-height: 0;
+  }
+
+  #info {
+    animation: fadeIn 1.5s;
   }
 }

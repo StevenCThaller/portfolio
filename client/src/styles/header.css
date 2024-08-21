@@ -28,6 +28,11 @@ header > .container {
   align-items: last baseline;
 }
 
+.brand,
+.brand * {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
 .top-nav {
   display: flex;
   gap: 2em;
