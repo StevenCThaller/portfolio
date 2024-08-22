@@ -8,10 +8,11 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  background: none;
+  background: #0c131b;
   font-size: 1.2em;
 }
 
 textarea {
   resize: none;
+  padding: 0.5em;
 }

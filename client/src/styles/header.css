@@ -7,12 +7,15 @@ header {
   left: 0;
   right: 0;
   min-width: 100%;
+  z-index: 1;
 }
 
 header > .container {
   flex-direction: row;
   align-items: last baseline;
   gap: 3em;
+  /* transform: translateX(-100%); */
+  animation: slideRight 0.5s linear forwards;
 }
 
 .ody-odes {
@@ -29,7 +32,9 @@ header > .container {
 }
 
 .brand,
-.brand * {
+.brand *,
+.nav-link,
+.active-nav {
   font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -38,9 +43,26 @@ header > .container {
   gap: 2em;
 }
 
+.nav-link {
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: transform 0.25s;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.25s;
+}
+
+.active-nav {
+  color: lightgray;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 576px) {
   header > .container {
     flex-direction: column;
+    gap: 1em;
+    align-items: center;
   }
 
   .top-nav {

@@ -6,18 +6,19 @@ function AdminDashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetchMessages();
-  }, []);
+    const fetchMessages = async () => {
+      try {
+        await _axios.get("/contact");
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      } catch (error) {
+        alert("Stop being naughty.");
+        navigate("/");
+      }
+    };
 
-  const fetchMessages = async () => {
-    try {
-      await _axios.get("/contact");
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
-      alert("Stop being naughty.");
-      navigate("/");
-    }
-  };
+    fetchMessages();
+  }, [navigate]);
+
   return <main>AdminDashboard</main>;
 }
 

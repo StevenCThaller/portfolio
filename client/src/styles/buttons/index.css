@@ -6,6 +6,8 @@ button {
   color: white;
   /* box-shadow: inset 0px 0px 5px 0px white; */
   box-sizing: border-box;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.1em;
 }
 button:hover {
   outline: 2px solid white;

@@ -1,0 +1,84 @@
+#work {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 2;
+  animation: fadeIn 1s linear;
+}
+
+#work h1 {
+  font-size: 3em;
+}
+
+#work-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 3em 0;
+}
+
+.company {
+  min-width: 100%;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  cursor: default;
+  text-align: right;
+}
+
+.company .date-range {
+  text-align: left;
+}
+
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.work-experience h2 {
+  margin-bottom: 0;
+}
+
+.company .date-range {
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.work-skill-list {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.job-description {
+  overflow: hidden;
+}
+
+.expand-contract {
+  margin-top: -100%;
+  transition: all 0.5s;
+}
+
+.expand-contract.expanded {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  #work {
+    align-items: normal;
+    flex-direction: column;
+  }
+
+  #work h1 {
+    font-size: 2em;
+  }
+
+  .company {
+    font-size: 1.5em;
+  }
+}

@@ -8,8 +8,9 @@ function LandingPage() {
           <span id="steven">(steven)</span> Cody Thaller
         </h1>
         <p>
-          Software Engineer <Divider /> Instructor <Divider /> Nerd
+          Software Engineer <Divider /> Teacher <Divider /> Nerd
         </p>
+        <p>Currently seeking opportunities as a full stack engineer.</p>
       </section>
       <Socials />
     </div>

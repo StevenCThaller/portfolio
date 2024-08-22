@@ -14,6 +14,7 @@ import {
 mongoose.connect(db_url).then(onDbConnectionSuccess).catch(onDbConnectionFail);
 
 const app: Express = express();
+
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
