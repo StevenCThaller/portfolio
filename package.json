@@ -16,6 +16,6 @@
     "server:dev": "yarn workspace server dev",
     "dev": "concurrently --kill-others-on-fail \"yarn server:dev\" \"yarn client:dev\"",
     "build": "yarn workspace client build && yarn workspace server build",
-    "prod": "rm -rf client/dist && rm -rf server/dist && node server/dist/index.js"
+    "prod": "node server/dist/index.js"
   }
 }
