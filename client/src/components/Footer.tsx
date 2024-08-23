@@ -8,7 +8,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Curious to see how this site was built?
+          Look inside
         </a>
       </h6>
       <h6>&copy; Cody Thaller 2024</h6>
