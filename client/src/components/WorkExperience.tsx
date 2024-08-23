@@ -33,7 +33,7 @@ function WorkExperience({
         <span className="date-range">
           {startDate} - {endDate}
         </span>{" "}
-        {company}
+        <span className="company-name">{company}</span>
       </h2>
       <div className="job-description">
         <div
