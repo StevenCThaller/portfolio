@@ -60,7 +60,7 @@
 }
 
 .expand-contract {
-  margin-top: -100%;
+  margin-top: -100vh;
   transition: all 0.5s;
 }
 
