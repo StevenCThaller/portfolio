@@ -25,6 +25,7 @@
     "typescript": "^5.5.4"
   },
   "scripts": {
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "build": "tsc --outDir dist"
   }
 }
