@@ -71,6 +71,7 @@ export const useProvideAuth = () => {
   };
 
   return {
+    auth,
     signin,
   };
 };
