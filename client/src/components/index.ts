@@ -7,3 +7,4 @@ export { default as SkillBullet } from "./SkillBullet";
 export { default as SocialIcon } from "./SocialIcon";
 export { default as Socials } from "./Socials";
 export { default as WorkExperience } from "./WorkExperience";
+export { default as ProjectCard } from "./ProjectCard";

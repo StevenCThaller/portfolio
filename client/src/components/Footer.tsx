@@ -1,7 +1,6 @@
 function Footer() {
   return (
     <footer>
-      <span id="ogit">ogit</span>
       <h6>
         <a
           href="http://github.com/StevenCThaller/portfolio"

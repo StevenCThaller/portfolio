@@ -1,0 +1,62 @@
+#projects {
+  display: flex;
+  /* justify-content: space-between; */
+  flex: 2;
+  animation: fadeIn 1s linear;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project-skill-list {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.project-card {
+  position: relative;
+  max-width: 35%;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 2px solid white;
+  padding: 1.5em;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s;
+  flex: 1 1 0px;
+  width: 0;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-card.focused {
+  cursor: auto;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.project-description {
+  margin-bottom: 1em;
+}
+
+.project-card img {
+  position: absolute;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

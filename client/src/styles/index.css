@@ -2,6 +2,7 @@
 @import url("./grid/index.css");
 @import url("./forms/index.css");
 @import url("./buttons/index.css");
+@import url("./projects.css");
 @import url("./flex.css");
 @import url("./header.css");
 @import url("./socials.css");
@@ -122,6 +123,7 @@ ul {
   display: inline;
   /* border: 1px solid white; */
   border-radius: 9999px;
+  cursor: default;
 }
 
 @media only screen and (max-width: 762px) {
